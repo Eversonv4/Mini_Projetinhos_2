@@ -1,0 +1,64 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box h1 {
+  color: #38ed38;
+  font-size: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  inset: 4px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 140%;
+  background: linear-gradient(#00ccff, #d400d4);
+  animation: animate 4s linear infinite;
+}
+
+.box2::after {
+  inset: 5px;
+}
+.box2::before {
+  width: 280px;
+  background: linear-gradient(
+    #ff1818,
+    #ffa500,
+    #ffff22,
+    #05ff05,
+    #00ccff,
+    #d400d4,
+    #7e00e6
+  );
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

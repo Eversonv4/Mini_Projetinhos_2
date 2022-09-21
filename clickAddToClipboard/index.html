@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <p>
+      Click on the button to copy the text from the text field. Try to paste the
+      text (e.g. ctrl+v) afterwards in a different window, to see the effect.
+    </p>
+
+    <input type="text" value="Sua mãe" id="myInput" />
+
+    <div class="tooltip">
+      <button onclick="myFunction()" onmouseout="outFunc()">
+        <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+        Copy text
+      </button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><'datalist></h1>
+
+    <label for="program-lang">programming language</label>
+    <input list="programming" id="program-lang" />
+    <datalist id="programming">
+      <option value="javascript"></option>
+      <option value="python"></option>
+      <option value="ruby"></option>
+    </datalist>
+
+    <h1><'select></h1>
+
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <h1><'optgroup></h1>
+    <select id="langs">
+      <option value="">Select any one</option>
+      <optgroup label="frontend">
+        <option value="react">React</option>
+        <option value="angular">Angular</option>
+      </optgroup>
+
+      <optgroup label="backend">
+        <option value="node">Node</option>
+        <option value="adonis">Adonis</option>
+      </optgroup>
+
+      <optgroup label="fullstack">
+        <option value="next">NextJs</option>
+        <option value="gatsby">Gatsby</option>
+      </optgroup>
+    </select>
+
+    <h1><'details> <'summary></h1>
+    <details>
+      <summary>How to become a better programer?</summary>
+      <p>Study and practice a lot!</p>
+    </details>
+
+    <h1><'del> e <'ins></h1>
+    <p>
+      My favorite programimg is <'del> <'inst>
+      <del>Java</del>
+      <ins>Javascript</ins>
+    </p>
+
+    <h1><'abbr></h1>
+    <p><abbr title="hypertext markup language">HTML</abbr> is awesome.</p>
+
+	 <h1><'code> <'pre></h1>
+
+	 <pre>
+		<code>
+		import { createStore, combineReducers } from "redux";
+		import stockReducer from "./Stock/Stock.reducer";
+
+		const rootReducer = combineReducers({
+			stock: stockReducer,
+			name: () => "Sem Redux Toolkit",
+		});
+
+		const store2 = createStore(rootReducer);
+
+		export type RootState = ReturnType<typeof rootReducer>;
+
+		export default store2;
+		</code>
+	 </pre>
+  </body>
+</html>

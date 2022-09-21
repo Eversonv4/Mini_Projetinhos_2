@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h2 atributo-qualquer="EverDade">EverDade</h2>
+
+    <style>
+      h2 {
+        position: relative;
+        font-size: 5rem;
+        line-height: 4.375rem;
+        font-family: sans-serif;
+        color: #35ec81;
+      }
+      h2::before {
+        content: attr(atributo-qualquer);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        color: #ffef16;
+        background: linear-gradient(#ff18e0, #007eaf);
+        border-right: 2px solid #4fed51;
+        overflow: hidden;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: animate 4s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          width: 0%;
+        }
+        70% {
+          width: 100%;
+        }
+      }
+    </style>
+
+    how to get data from a pseudo-element
+    https://stackoverflow.com/questions/38872290/how-to-get-pseudo-element
+  </body>
+</html>

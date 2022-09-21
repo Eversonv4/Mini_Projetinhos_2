@@ -1,0 +1,35 @@
+body {
+  background-color: #ccc;
+  font-size: 28px;
+}
+.splide__track .splide__list .splide__slide:nth-child(odd),
+.splide__track .splide__list .splide__slide:nth-child(even) {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide__track .splide__list .meu-slide-1 {
+  background-color: #00ffff9c;
+}
+
+.splide__track .splide__list .meu-slide-2 {
+  background-color: #1f8300a2;
+}
+
+.splide__track .splide__list .meu-slide-3 {
+  background-color: #fbff009c;
+}
+
+.splide__track .splide__list .meu-slide-4 {
+  background-color: #0502b99c;
+}
+.splide__track .splide__list .meu-slide-5 {
+  background-color: #ff24ed9c;
+}
+
+.splide__track .splide__list .meu-slide-6 {
+  background-color: #4700a59c;
+}

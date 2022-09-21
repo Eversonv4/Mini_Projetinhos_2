@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./assets/js/splidejs/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide meu-slide-1">Slide 01</li>
+          <li class="splide__slide meu-slide-2">Slide 02</li>
+          <li class="splide__slide meu-slide-3">Slide 03</li>
+          <li class="splide__slide meu-slide-4">Slide 04</li>
+          <li class="splide__slide meu-slide-5">Slide 05</li>
+          <li class="splide__slide meu-slide-6">Slide 06</li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="./assets/js/splidejs/dist/js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide", {
+          type: "loop",
+          perPage: 2,
+          focus: "center",
+          autoplay: true,
+        });
+        splide.mount();
+      });
+    </script>
+  </body>
+</html>

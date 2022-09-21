@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+  background-color: #212123;
+  color: #efefef;
+}
+
+.conteudo {
+  display: flex;
+  width: 350px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 25px;
+  column-gap: 20px;
+}
+
+.card {
+  flex: 0 0 100%;
+  padding: 30px;
+  scroll-snap-align: start;
+  border-radius: 30px;
+}
+
+.card h1 {
+  margin-bottom: 2rem;
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(-229deg, #00dbde, #fc00ff);
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(-229deg, #0093e9, #80d0c7);
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(-229deg, #50d990, #d4d054);
+}
+
+.card:nth-child(4) {
+  background: linear-gradient(-229deg, #d9afd9, #97d9e1);
+}
+
+.card:nth-child(5) {
+  background: linear-gradient(-229deg, #fbab7e, #f7ce68);
+}
