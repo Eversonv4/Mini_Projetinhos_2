@@ -1,33 +1,41 @@
 <!DOCTYPE html>
-<html>
-	<head></head>
-	<body>
-	
-		<audio controls autoplay>
-			<!-- <source src="./09-Exitus.mp3" type="audio/mpeg"> -->
-			<source src="./Mareux-The-Perfect-Girl(Cure-cover).m4a" type="audio/mpeg">
-		</audio>
-		
-		<h1>Documentação:</h1>
-		<h2>https://www.w3schools.com/jsref/dom_obj_audio.asp</h2>
-		
-		<p>events javascript: https://www.w3schools.com/jsref/event_onload.asp</p>
-		
-		<button onclick="Play()">Play</button>
-		
-		<script>
-			
-			const audio = document.querySelector("audio")
-			
-			const h2 = document.querySelector("h2")
-			
-			console.log(audio)
-			
-			function Play() {
-				audio.play()
-			}
-			
-			
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio controls autoplay>
+      <!-- <source src="./09-Exitus.mp3" type="audio/mpeg"> -->
+      <source
+        src="./Mareux-The-Perfect-Girl(Cure-cover).m4a"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <h1>Documentação:</h1>
+    <h2>https://www.w3schools.com/jsref/dom_obj_audio.asp</h2>
+
+    <p>events javascript: https://www.w3schools.com/jsref/event_onload.asp</p>
+
+    <button onclick="Play()">Play</button>
+
+    <script>
+      const audio = document.querySelector("audio");
+
+      const h2 = document.querySelector("h2");
+
+      console.log(audio);
+
+      function Play() {
+        audio.load();
+        audio.play();
+      }
+
+      Play();
+      /*
 			audio.duration
 			
 			audio.currentTime
@@ -38,8 +46,7 @@
 				console.log("acabou")
 				audio.play()
 			})
-			
-			
-		</script>
-	</body>
+			*/
+    </script>
+  </body>
 </html>
