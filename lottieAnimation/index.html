@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottie Animation</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+  </head>
+
+  <body>
+    <div data-animation="animationLottie">
+      <script>
+        const animation = bodymovin.loadAnimation({
+          container: document.querySelector(
+            "[data-animation='animationLottie']"
+          ),
+          path: "WebResearch.json",
+          render: "svg",
+          loop: true,
+          width: 1000,
+          height: 1000,
+          autoplay: true,
+          name: "demo animation",
+        });
+      </script>
+    </div>
+  </body>
+</html>
